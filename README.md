@@ -116,11 +116,85 @@ JavaScript非常灵活，元编程这个词虽然看上去挺陌生，但实际�
 - 数据统计
 
 ### 图形编程
-- WebGL
+图形编程对前端来说是一个相对小众的垂直领域，虽然前端几乎每天都在跟图形打交道，但基于 HTML和CSS 的UI图形是非常便捷的图形编程技术，而便捷的同时也有可定制化稍弱的缺陷。
+
+在图形编程领域，图元通常被理解为开发者能够操控的最小、最基本的图形元素，图元种类越多、单位越小意味着可定制化的空间越大。CSS 的图元只有一种：矩形，称之为 CSS 盒模型。传统前端的页面是一个个盒子拼接起来的。
+
+SVG 是比 CSS 更底层的图形编程技术，而且是矢量的。现实中对 SVG 最常见的使用场景是用作字体图标-font icons，主要发挥的是它矢量化的优势。但其实 SVG 的功能非常丰富，CSS 的很多能力都是借鉴的 SVG，比如`transform`。以及动态性也远大于 CSS，比如组件复用（Web Components规范与 SVG 非常接近）等等。除了font icons以外， SVG 最常用的场景是Charts。
 - SVG
+  - 基本图元
+  - 原始的`transform`
+  - 组件复用-`use`与`xlink`
+  - 复杂应用实践：搜狗地铁图
+
+Canvas是比SVG更底层的图形编程技术，分为两种：2D 和 3D（WebGL）。2D 是相对上层的技术，顾名思义只有 X 轴和 Y 轴，图元有两种：矩形（rect）和路径（path）。Canvas 2D提供了丰富的路径绘制API，比如圆弧、贝塞尔曲线。以及一些坐标操作的API，比如translate、rotate等等。我对Canvas 2D的使用并不多，没有太深入的经验，主要是集中在 Canvas 3D - WebGL上。
+
+WebGL是前端范畴内最底层的图形编程技术，也是最接近图形学理论的技术，目前有部分高校把WebGL作为图形学的教学媒介了（以前普遍是OpenGL）。
+
+- WebGL
+  - 基本图元
+  - 渲染管线
+    - 从CPU到GPU
+    - 仿射变换
+      - 正向投影
+      - 透视投影
+    - 数学
+      - 矩阵
+      - 向量
+      - 笛卡尔坐标
+      - 三角剖分
+    - shader 编程
+      - 数据 - attribute、uniform、varying
+      - buffer
+    - 抗锯齿
+      - 锯齿产生的原因
+      - FXAA
+    - 纹理
+      - 数据纹理
+      - 图像纹理
+      - 多重纹理
+    - 相机
+  - 交互
+    - 最原始的transform-矩阵
+  - 性能优化
+    - CPU
+      - TypedArray
+      - GC
+      - 数据整合
+    - GPU
+      - stencil test
+      - z-buffer
+      - attribute与uniform
+  - 最佳实践
+    - web worker多线程
+    - webassembly
+    - 搜狗地图WebGL引擎架构
 
 ### Serverless
 - FaaS
 
 ### 行业知识
 - WebGIS
+  - 坐标体系
+  - GeoJSON
+  - 墨卡托投影
+  - 瓦片
+    - 坐标
+      - 经纬度
+      - 墨卡托坐标
+      - 屏幕坐标
+      - 瓦片坐标
+        - x
+        - y
+        - level
+    - 数据
+      - 瓦片金字塔
+      - 瓦片切割
+        - 陆地、海洋
+        - 建筑物
+        - 跨瓦片数据
+      - 视野-bound
+  - POI
+    - 布局
+    - 冲突检测
+      - R-tree算法
