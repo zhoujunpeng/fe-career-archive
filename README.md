@@ -23,7 +23,7 @@
 - 主从多线程模型
 - worker线程管理
   - 通信
-  - Actor模型
+  - Actor模型：[使用Actor模型管理Web Worker多线程](https://github.com/zhoujunpeng/fe-career-archive/issues/1)
 - 安全沙箱
 
 #### JavaScript
