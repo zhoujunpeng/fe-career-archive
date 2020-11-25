@@ -125,7 +125,7 @@ SVG 是比 CSS 更底层的图形编程技术，而且是矢量的。现实中�
   - 基本图元
   - 原始的`transform`
   - 组件复用-`use`与`xlink`
-  - 复杂应用实践：搜狗地铁图
+  - 复杂应用实践：[SVG的动态之美-搜狗地铁图重构散记](https://github.com/zhoujunpeng/fe-career-archive/issues/2)
 
 Canvas是比SVG更底层的图形编程技术，分为两种：2D 和 3D（WebGL）。2D 是相对上层的技术，顾名思义只有 X 轴和 Y 轴，图元有两种：矩形（rect）和路径（path）。Canvas 2D提供了丰富的路径绘制API，比如圆弧、贝塞尔曲线。以及一些坐标操作的API，比如translate、rotate等等。我对Canvas 2D的使用并不多，没有太深入的经验，主要是集中在 Canvas 3D - WebGL上。
 
