@@ -93,7 +93,7 @@ JavaScript非常灵活，元编程这个词虽然看上去挺陌生，但实际�
 以及相关生态和理论：
 - VDOM
 - Diff
-- Redux
+- Redux：[Redux/Mobx/Akita/Vuex对比 - 选择更适合低代码场景的状态管理方案](https://github.com/zhoujunpeng/fe-career-archive/issues/5)
   - Flux
   - Redux Saga
 
@@ -174,7 +174,7 @@ WebGL是前端范畴内最底层的图形编程技术，也是最接近图形学
 - FaaS
 
 ### 行业知识
-- WebGIS
+- WebGIS： [WebGIS vs WebGL 图形编程](https://github.com/zhoujunpeng/fe-career-archive/issues/4)
   - 坐标体系
   - GeoJSON
   - 墨卡托投影
