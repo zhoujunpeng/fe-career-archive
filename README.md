@@ -71,7 +71,7 @@ JavaScript非常灵活，元编程这个词虽然看上去挺陌生，但实际�
   - Koa
   - Express
 - IO
-  - Buffer
+  - Buffer：[WebGL与Node.js中的Buffer对比](https://github.com/zhoujunpeng/fe-career-archive/issues/6)
   - Stream
 - 部署
   - 集群
@@ -145,7 +145,7 @@ WebGL是前端范畴内最底层的图形编程技术，也是最接近图形学
       - 三角剖分
     - shader 编程
       - 数据 - attribute、uniform、varying
-      - buffer
+      - buffer：[WebGL与Node.js中的Buffer对比](https://github.com/zhoujunpeng/fe-career-archive/issues/6)
     - 抗锯齿
       - 锯齿产生的原因
       - FXAA
